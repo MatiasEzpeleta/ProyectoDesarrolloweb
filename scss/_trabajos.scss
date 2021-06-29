@@ -1,0 +1,15 @@
+/* Trabajos.html */
+
+.listaRobot {
+    padding: 1em;
+    margin: 1em;
+}
+.gridTrabajo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5em;
+}
+.videoTrabajo {
+    padding-top: 3em;
+    margin: 2em
+}

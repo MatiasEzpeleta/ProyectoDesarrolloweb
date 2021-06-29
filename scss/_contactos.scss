@@ -1,0 +1,62 @@
+/* Contacto Formulario */
+/* agregue un mixin de tamaño de fuente */
+.contacto {
+    @include size(1.5rem);
+    color: #4f4f4f;
+    margin: 15rem;
+    position: relative;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column;     
+}
+/* agregue un mixin de tamaño tamaño de fuente */
+legend {
+    @include size(1rem);
+    color: #4f4f4f;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input,
+textarea,
+select {
+    padding: 1.5rem;
+    display: flex;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+    height: 100px;
+}
+.terminos {
+    text-align: center;
+    text-transform: capitalize;
+    @include size(2rem);
+}
+.boton-formulario {
+    color: #ffffff;
+    background:linear-gradient(90deg, #08081d, #17202a) ;
+    font-weight: 700;
+    text-decoration: none;
+    @include size(1rem);
+    padding: 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;  
+    cursor: pointer;                     
+}
+.boton-formulario:hover {   
+    border-radius: 10rem;
+}
