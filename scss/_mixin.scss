@@ -1,6 +1,10 @@
 @mixin size($size) {
     font-size: $size ;
 }
+@mixin nuevoMixin($transform, $size) {
+    font-size: $size;
+    text-transform: $transform;
+}
 
 @mixin telefono {
     @media (min-width: $telefono) {

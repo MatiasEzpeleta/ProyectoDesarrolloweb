@@ -1,13 +1,20 @@
 /* Contacto Formulario */
 /* agregue un mixin de tamaño de fuente */
 .contacto {
-    @include size(1.5rem);
-    color: #4f4f4f;
-    margin: 15rem;
-    position: relative;
-    bottom: 10rem;
-    display: flex;
-    flex-direction: column;     
+    @media (min-width: 320px) {
+        color: #4f4f4f;   
+        display: flex;
+        flex-direction: column; 
+        margin: 0;
+        @include telefono {
+            max-width: 600px;
+            margin: auto;
+            padding: 2em;
+        }
+        @include desktop {
+            max-width: 900px;
+        }
+    }     
 }
 /* agregue un mixin de tamaño tamaño de fuente */
 legend {
@@ -40,8 +47,7 @@ textarea {
 }
 .terminos {
     text-align: center;
-    text-transform: capitalize;
-    @include size(2rem);
+    @include nuevoMixin(capitalize, 1em);
 }
 .boton-formulario {
     color: #ffffff;
