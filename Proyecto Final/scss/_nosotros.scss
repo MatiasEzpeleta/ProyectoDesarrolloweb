@@ -1,0 +1,17 @@
+/* Nosotros.html */
+.imagenNosotros {
+    @media (max-width: 480px){
+      max-width: 300px;
+        margin: 2em;
+    }
+    @include telefono {
+        max-width: 400px;
+        padding: 1em;
+        margin: 1em;
+    }
+    @include tablet {
+        max-width: 100%;
+    }
+    
+}
+    
